@@ -1,0 +1,12 @@
+{
+    "name": "whsv26/low-level",
+    "authors": [
+        {
+            "name": "whsv26",
+            "email": "whsv26@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    }
+}
