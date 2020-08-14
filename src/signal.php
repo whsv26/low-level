@@ -5,21 +5,9 @@
  */
 declare(ticks=1);
 
-require_once "vendor/autoload.php";
+require_once "../vendor/autoload.php";
 
-class Handler {
-    const signalHandler = '\signalHandler';
-    const tickHandler = '\tickHandler';
-}
-
-function signalHandler (int $signum) {
-    echo "$signum intercepted" . PHP_EOL;
-    exit(0);
-}
-
-function tickHandler () {
-    echo "tick" . PHP_EOL;
-}
+use Lib\Handler;
 
 /**
  * invoke handler every statement tick

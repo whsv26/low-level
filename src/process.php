@@ -1,6 +1,6 @@
 <?php
 
-require_once "vendor/autoload.php";
+require_once "../vendor/autoload.php";
 
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\PhpProcess;
@@ -10,7 +10,7 @@ $lsProcess = new Process(['ls', '-la']);
 $lsProcess->run(fn (string $output) => print($lsProcess->getOutput()));
 
 // cat
-$catProcess = new Process(['cat', 'composer.lock']);
+$catProcess = new Process(['cat', '../composer.lock']);
 $catProcess->start();
 
 foreach ($catProcess as $type => $buffer) {

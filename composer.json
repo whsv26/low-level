@@ -8,6 +8,12 @@
     ],
     "require": {
         "php": "^7.4",
-        "symfony/process": "^5.1"
+        "symfony/process": "^5.1",
+        "ext-pcntl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lib\\": "lib"
+        }
     }
 }
