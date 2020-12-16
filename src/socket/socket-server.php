@@ -1,5 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
+require_once "../../vendor/autoload.php";
+
 /**
  * Instead of declare(ticks=1)
  * For performance boost

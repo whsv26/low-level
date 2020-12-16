@@ -1,8 +1,10 @@
 <?php
 
-function println(string $line): void {
-    echo $line . PHP_EOL;
-}
+declare(strict_types=1);
+
+use function Lib\println;
+
+require_once "../../vendor/autoload.php";
 
 /**
  * php wrapper

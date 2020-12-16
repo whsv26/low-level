@@ -8,12 +8,15 @@
     ],
     "require": {
         "php": "^7.4",
+        "ext-pcntl": "*",
+        "ext-posix": "*",
         "symfony/process": "^5.1",
-        "ext-pcntl": "*"
+        "lstrojny/functional-php": "^1.14"
     },
     "autoload": {
         "psr-4": {
             "Lib\\": "lib"
-        }
+        },
+        "files": ["lib/helpers.php"]
     }
 }

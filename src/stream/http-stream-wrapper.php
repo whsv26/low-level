@@ -1,8 +1,10 @@
 <?php
 
-function println(string $line): void {
-    echo $line . PHP_EOL;
-}
+declare(strict_types=1);
+
+require_once "../../vendor/autoload.php";
+
+use function Lib\println;
 
 $httpContext = stream_context_create([
     'http' => [

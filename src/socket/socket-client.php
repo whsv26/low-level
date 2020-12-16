@@ -1,5 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
+require_once "../../vendor/autoload.php";
+
 $clientSocketFd = stream_socket_client('tcp://localhost:8222');
 
 if ($clientSocketFd) {
